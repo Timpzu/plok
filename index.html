@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="fi">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Plok</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- jQuery UI-->
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <!-- Custom CSS -->
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400,600,700" rel="stylesheet">
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div id="sidebar">
+      <div id="sidebar-top">
+        <div id="account">
+          <img src="img/startup-photo.png" alt="Kirjautuneen henkilön profiilikuva"/>
+          <div id="accountName">
+            <h5 class="element">Pete Manninen</h5>
+            <h6>Toimitusjohtaja</h6>
+          </div>
+        </div>
+      </div>
+      <div id="program-menu">
+        <div class="menu">
+          <ul>
+            <li class="menu_button" id="pg1"><a class="active">Kotisivu</a></li>
+            <li class="menu_button" id="pg2"><a>Toiminta</a></li>
+            <li class="menu_button" id="pg3"><a>Moduulit</a></li>
+            <li class="menu_button" id="pg4"><a>Asetukset</a></li>
+            <li class="menu_button" id="pg5"><a>Kauppa</a></li>
+          </ul>
+        </div>
+      </div>
+      <div id="account-menu">
+        <div class="menu">
+          <ul>
+            <li><a>Toimintalogi</a></li>
+            <li><a>Profiili</a></li>
+            <li><a>Viestit</a></li>
+            <li><a>Tilaus</a></li>
+            <li><a>Asiakaspalvelu</a></li>
+          </ul>
+        </div>
+      </div>
+      <div id="service-menu">
+        <ul></ul>
+      </div>
+      <input id="serviceInput" type="text" />
+    </div>
+    <div id="wrapper">
+      <header>
+        <div id="logo">
+           <img alt="logo" src="img/Plok_logo.svg" />
+        </div>
+      </header>
+      <div id="page1" class="container-fluid page shown">
+        <div class="row">
+          <div class="col-md-8">
+            <img class="banner-img" src="img/mockup_macbook.jpg" width="500" alt="Kaksi miestä käyttävät Plok-alustaa koneellaan" />
+            <h1>"Plok – helpompi, nopeampi sekä säästeliäämpi tapa toimia"</h1>
+            <p>Plok-prototyyppi antaa sinulle suuntaa siitä,
+              miltä tulevaisuus näyttää, kun konsultit siirtyvät digitaaliseen muotoon
+              ja räätälöinti on enemmän asiakkaan hallinnassa.
+              Tämän hetkinen prototyyppi antaa mahdollisuudet testata kauppa-sivua,
+              robottia, moduuleita (lista kasvaa, kun edemmäs edetään) plaaplaaplaa…</p>
+          </div>
+          <div id="page1-sidebar" class="col-md-4">
+            <div id="codelist">
+              <ul>
+                <li>Lista hakuun syötettävistä komennoista:</li>
+                <li>"Aloita demo"</li>
+                <li>"Avaa kotisivu"</li>
+                <li>"Ketkä ovat Innocraft?"</li>
+                <li>"Mikä tämä on?"</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="page5" class="container-fluid page">
+        <h2>Sinulle suositellut</h2>
+        <div class="row">
+          <div class="col-md-4">
+            <a class="top-category"><span>Toiminnanohjaus</span></a>
+          </div>
+          <div class="col-md-4">
+            <a class="top-category"><span>Tuotannonohjaus</span></a>
+          </div>
+          <div class="col-md-4">
+            <a class="top-category"><span>Henkilöstönohjaus</span></a>
+          </div>
+        </div>
+        <h3>Kategoriat</h3>
+        <div class="row">
+          <div class="col-md-3">
+            <a class="bottom-category" id="b-category-1"><span>Jakelu</span></a>
+          </div>
+          <div class="col-md-3">
+            <a class="bottom-category" id="b-category-2"><span>Kirjanpito</span></a>
+          </div>
+          <div class="col-md-3">
+            <a class="bottom-category" id="b-category-3"><span>Laskutus</span></a>
+          </div>
+          <div class="col-md-3">
+            <a class="bottom-category" id="b-category-4"><span>Reskontra</span></a>
+          </div>
+        </div>
+      </div>
+      <!-- Toiminnanohajuksen alasivu -->
+      <div id="page5-1" class="container-fluid page">
+        <div class="row">
+          <div class="col-md-2 kuva">
+            <a id="kuva1" class=""></a>
+          </div>
+          <div class="col-md-4 teksti">
+            <h3>Jakelumoduuli S</h3>
+            <p><span class="sum">100,00 €/kk </span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum pellentesque orci elit, a varius leo porta a. Phasellus aliquam condimentum purus id posuere.</p>
+            <button type="button" class="btn btn-cstm" data-toggle="modal" data-target="#myModal">Tilaa</button>
+          </div>
+          <div class="col-md-2 kuva">
+            <a id="kuva2" class=""></a>
+          </div>
+          <div class="col-md-4 teksti">
+            <h3>Jakelumoduuli M</h3>
+            <p><span class="sum">200,00 €/kk </span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum pellentesque orci elit, a varius leo porta a. Phasellus aliquam condimentum purus id posuere.</p>
+            <button type="button" class="btn btn-cstm-gray">Tilaa</button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-2 kuva">
+            <a id="kuva3" class=""></a>
+          </div>
+          <div class="col-md-4 teksti">
+            <h3>Jakelumoduuli L</h3>
+            <p><span class="sum">300,00 €/kk </span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum pellentesque orci elit, a varius leo porta a. Phasellus aliquam condimentum purus id posuere.</p>
+            <button type="button" class="btn btn-cstm-gray">Tilaa</button>
+          </div>
+          <div class="col-md-2 kuva">
+            <a id="kuva4" class=""></a>
+          </div>
+          <div class="col-md-4 teksti">
+            <h3>Jakelumoduuli XL</h3>
+            <p><span class="sum">400,00 €/kk </span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum pellentesque orci elit, a varius leo porta a. Phasellus aliquam condimentum purus id posuere.</p>
+            <button type="button" class="btn btn-cstm-gray">Tilaa</button>
+          </div>
+        </div>
+      </div>
+      <!-- Modal -->
+      <div class="modal " id="myModal" role="dialog">
+        <div class="modal-dialog">
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-body">
+              <p>Haluatko tilata tuotteen osaksi nykyistä pakettiasi?</p>
+              <h3>Jakelumoduuli S</h3>
+              <div id="module1"></div>
+              <p><span class="sum">100,00 €/kk </span> <span class="glyphicon glyphicon-chevron-right"></span> <span class="sum blink"> 500,00 €/kk</span></p>
+              <button class="btn btn-cstm btn-green" data-dismiss="modal" data-toggle="modal" data-target="#myModal2">Tilaa</button>
+              <button class="btn btn-cstm" data-dismiss="modal">Hylkää</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal " id="myModal2" role="dialog">
+        <div class="modal-dialog">
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-body">
+              <p>Tilaus suoritettu!</p>
+              <button class="btn btn-cstm" data-dismiss="modal">Ok</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src='https://code.responsivevoice.org/responsivevoice.js'></script>
+    <script src="js/robotti.js"></script>
+    <script>
+      $(document).ready(function() {
+        // Sivunvaihto
+        $('.menu_button').on('click',function() {
+          var id = this.id;
+          switch (id) {
+            case 'pg1':
+              if ($('.page').hasClass('shown')) { $('.page').removeClass('shown') }
+              if ($('.menu_button a').hasClass('active')) { $('.menu_button a').removeClass('active') }
+              $('#page1').addClass('shown');
+              $('#pg1 a').addClass('active');
+              break;
+            case 'pg3':
+              if ($('.page').hasClass('shown')) { $('.page').removeClass('shown') }
+              if ($('.menu_button a').hasClass('active')) { $('.menu_button a').removeClass('active') }
+              $('#page3').addClass('shown');
+              $('#pg3 a').addClass('active');
+              break;
+            case 'pg5':
+              if ($('.page').hasClass('shown')) { $('.page').removeClass('shown') }
+              if ($('.menu_button a').hasClass('active')) { $('.menu_button a').removeClass('active') }
+              $('#page5').addClass('shown');
+              $('#pg5 a').addClass('active');
+              break;
+          }
+        });
+        $('#b-category-1').on('click', function() {
+          $('#page5').removeClass('shown');
+          $('#page5-1').addClass('shown');
+        });
+
+        // Profiiliasetukset
+        $('#account').click(function() {
+          if ($('#program-menu').is(':visible')) {
+            $('#program-menu').toggle('slide', { direction: 'left'}, 500, function() {
+              $('#account-menu').toggle('slide', { direction: 'left'}, 500);
+              $('#sidebar').delay(100).animate({backgroundColor: '#21A8B5'});
+              $('#account').addClass('accountAlt');
+              $('#serviceInput').fadeOut(300);
+            });
+          } else {
+            $('#account-menu').toggle('slide', { direction: 'left'}, 500, function() {
+              $('#program-menu').toggle('slide', { direction: 'left'}, 500);
+              $('#sidebar').delay(100).animate({backgroundColor: '#393939'});
+              $('#account').removeClass('accountAlt');
+              $('#serviceInput').fadeIn(300);
+            });
+          }
+        });
+
+        // Robottichatti
+        $('#serviceInput').focus(function() {
+          if ($('#program-menu').is(':visible')) {
+            $('#program-menu').fadeOut(300, function() {
+              $('#service-menu').fadeIn(300);
+              $('#service-menu ul').append('<li>Kuinka voin auttaa?</li>');
+              responsiveVoice.speak("Kuinka voin auttaa?","Finnish Female");
+            });
+          };
+        });
+        $('#serviceInput').focusout(function(e) {
+          if ($('#service-menu').is(':visible')) {
+            $('#service-menu').fadeOut(300, function() {
+              $('#program-menu').fadeIn(300);
+              $('#service-menu ul').empty();
+              e.currentTarget.value = "";
+            });
+          }
+        });
+        $("#myBtn").click(function(){
+          $("#myModal").modal();
+        });
+
+        var p = $('#pg5').position();
+        $('#pointter1').css("top", p.top+18)
+
+        var p2 = $('#b-category-1 span').position();
+        $('#pointter2').css("top", p2.top+18)
+      });
+    </script>
+  </body>
+</html>

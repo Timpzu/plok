@@ -1,0 +1,362 @@
+html {
+  margin: 0;
+  padding: 0;
+}
+body {
+  height: 100vh;
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 16px;
+}
+h1  {
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+h2 {
+  font-weight: 300;
+}
+h3 {
+  font-weight: 300;
+}
+#logo {
+  position: fixed;
+  height: 7%;
+  z-index: 100;
+  top: 2.5%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#logo img {
+  height: 100%;
+  width: auto;
+}
+#sidebar {
+  height: 100%;
+  width: 20%;
+  background-color: #393939;
+  position: absolute;
+}
+#sidebar-top {
+  height: 12%;
+  width: 100%;
+  color: white;
+}
+#account {
+  background-color: #a50000;
+  height: 100%;
+  width: 100%;
+  padding: 5%;
+}
+#account:hover {
+  cursor: pointer;
+  background-color: #8B0000;
+}
+.accountAlt {
+  background-color: #1C909B!important;
+}
+.accountAlt:hover {
+  background-color: #156D75 !important;
+}
+#account img {
+  height: 100%;
+  width: auto;
+  vertical-align: top;
+}
+#accountName {
+  display: inline-block;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: 5%;
+}
+#accountName h5 {
+  font-size: 2.5vh;
+  font-weight: 600;
+  margin-top: 0;
+  margin-bottom: 4%;
+}
+#accountName h6 {
+  margin-top: 4%;
+  margin-bottom: 0;
+}
+#program-menu {
+  display: inline-block;
+  width: 100%;
+}
+#account-menu {
+  display: inline-block;
+  width: 100%;
+  display: none;
+}
+#service-menu {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  height: 88%;
+  display: none;
+  color: white;
+  padding: 10%;
+}
+#service-menu ul {
+  list-style: none;
+  font-size: 14px;
+  text-align: left;
+  padding: 0;
+}
+#service-menu ul li {
+  padding: 5% 0;
+}
+#serviceInput {
+  display: inline-block;
+  position: absolute;
+  width: 80%;
+  left: 10%;
+  bottom: 8%;
+  padding-left: 5px;
+  color: white;
+  background-color: #333333;
+  border: 1px solid #858585;
+  border-radius: 20px;
+}
+.oikea {
+  text-align: right;
+}
+.menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.menu ul li a {
+  display: block;
+  text-align: center;
+  font-size: 3.2vh;
+  padding: 8%;
+  color: #eee;
+}
+.menu ul li a:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
+.menu ul li a:hover:not(.active) {
+  background-color: #333333;
+
+}
+.menu ul li .active {
+  background-color: #21a8b5;
+  font-weight: 700;
+}
+#wrapper {
+  height: 100%;
+  margin-left: 20%;
+}
+header {
+  background-color: #df192c;
+  height: 12%;
+  width: 100%;
+}
+.page {
+  overflow: scroll;
+  height: 88vh;
+  display: none;
+}
+.shown {
+  display: block !important;
+}
+.banner-img {
+  width: 100%;
+}
+#page1 {
+  padding: 24px;
+}
+#page1-sidebar {
+  height: 88vh;
+}
+#codelist {
+  display: block;
+  height: 100%;
+  background-color: #eee;
+  padding: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 20px;
+  text-align: center;
+}
+#codelist ul {
+  list-style: none;
+  padding: 0;
+}
+#codelist ul li {
+  margin-bottom: 0.2em;
+}
+#codelist ul li:first-child {
+  font-weight: 600;
+  margin-bottom: 0.8em;
+}
+#page5 {
+  padding-left: 24px;
+}
+#page5 .row:nth-child(2) {
+  height: 40%;
+  padding-top: 12px;
+}
+#page5 .row:nth-child(4) {
+  height: 33%;
+  padding-top: 12px;
+}
+#page5 .row div {
+  height: 100%;
+}
+.top-category {
+  display: inline-table;
+  position: relative;
+  height: 85%;
+  width: 95%;
+  background-color: #eee;
+  color: white;
+  font-size: 1.4em;
+}
+.top-category span {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+.top-category:hover {
+  cursor: pointer;
+  color: #fff;
+  text-decoration: none;
+}
+.bottom-category {
+  display: inline-table;
+  position: relative;
+  height: 70%;
+  width: 95%;
+  color: white;
+  font-size: 1.2em;
+  transition: border 0.1s;
+}
+.bottom-category:hover {
+  cursor: pointer;
+  color: #fff;
+  text-decoration: none;
+}
+.bottom-category span {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+#b-category-1 {
+  background: #187982;
+}
+#b-category-2, #b-category-3, #b-category-4  {
+  background: #eee;
+}
+#page5-1 .row div {
+  height: 100%;
+}
+#page5-1 h3 {
+  margin-top: 10px;
+}
+#page5-1 {
+  padding: 24px;
+}
+#page5-1 .row {
+  height: auto;
+}
+#page5-1 .row:first-child {
+  margin-bottom: 48px;
+}
+#page5-1 .row .kuva {
+  height: 100%;
+}
+#page5-1 .kuva a {
+  display: inline-block;
+  position: relative;
+  height: 125px;
+  width: 100%;
+  background-color: #eee;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#page5-1 p span {
+  display: block;
+}
+.btn-cstm {
+  background-color: #333333;
+  color: white;
+  border-radius: 0;
+  font-weight: 700;
+}
+.btn-cstm-gray {
+  background-color: #eee;
+  color: white;
+  border-radius: 0;
+  font-weight: 700;
+}
+.btn-cstm:hover {
+  background-color: #333333;
+  color: white;
+}
+.btn-cstm:focus {
+  background-color: #333333;
+  color: white;
+}
+.btn-green {
+  background-color: #159E84;
+}
+.btn-green:hover{
+  background-color: #159E84;
+}
+.modal-content {
+  border-radius: 0px !important;
+  text-align: center !important;
+  padding-top: 12px !important;
+  padding-bottom: 24px !important;
+}
+.modal-content span:nth-child(2) {
+  font-size: 1.8em;
+  color: #eee;
+  padding: 5px;
+  vertical-align: bottom;
+}
+.sum {
+  color: #21a8b5;
+  font-size: 1.4em;
+  font-weight: 600;
+}
+.modal-body * {
+  margin-top: 12px;
+}
+.blink {
+  animation: blink 2s linear infinite;
+}
+@keyframes blink {
+  50% { opacity: 0; }
+}
+#module1 {
+  height: 100px;
+  width: 125px;
+  background-image: url(../img/posti.svg);
+  background-size: cover;
+  background-position: center;
+  margin: 0 auto;
+}
+#kuva1 {
+  background-image: url(../img/posti.svg);
+}
+#kuva2 {
+  background-image: url(../img/posti_huolto.svg);
+}
+#kuva3 {
+  background-image: url(../img/ups.svg);
+}
+#kuva4 {
+  background-image: url(../img/fedex.svg);
+}
+.pointter {
+  position: fixed;
+  height: 75px;
+  width: 75px;
+  z-index: 1000;
+  background-image: url(../img/hand.svg);
+  display: none;
+}
